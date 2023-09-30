@@ -1,232 +1,192 @@
-body{
-  background-color:lightblue;
-  display: flex;
-  justify-content: center;
-  align-items: right;
-  flex-direction: column;
-  margin-left: 500px;
- 
+body {
+	background-color: lightblue;
+	display: flex;
+	justify-content: center;
+	align-items: right;
+	flex-direction: column;
+	/* margin-left: 500px; */
+	margin: 0 auto;
+	align-items: center;
 }
 
-#display{
-
-  margin-left: 200px;
+#display {
+	/* margin-left: 200px; */
 }
 
-#first{
-  display: flex;
+#first {
+	display: flex;
 }
 
-#instructions{
-  height: 247px;
-  width: 440px;
-  background-color:#32a8a4;
-  border: 10px double white;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  text-align: center;
-  
+#instructions {
+	height: 247px;
+	width: 440px;
+	background-color: #32a8a4;
+	border: 10px double white;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	text-align: center;
 }
 
-
-#changeImageButton{
-  height: 50px;
-  width: 180px;
-  font-size: 20px;
-  margin-top: 5px;
-  margin-left: 300px;
-  font-weight: bold;
-  background-color: rgba(47, 255, 134, 0.655);
-  border: 3px solid;
-  border-radius: 20%;
+#changeImageButton {
+	height: 50px;
+	width: 180px;
+	font-size: 20px;
+	margin-top: 5px;
+	/* margin-left: 300px; */
+	font-weight: bold;
+	background-color: rgba(47, 255, 134, 0.655);
+	border: 3px solid;
+	border-radius: 20%;
 }
 
-#changeImageButton:hover{
-  background-color: aqua;
-  color: red;
+#changeImageButton:hover {
+	background-color: aqua;
+	color: red;
 }
 
-#list{
-  margin-left: 60px;
- 
- 
+#list {
+	margin-left: 60px;
 }
-#lists{
-  margin-right: 60px;
- 
- 
+#lists {
+	display: flex;
+	flex-wrap: wrap;
+	width: 70%;
+	justify-content: space-evenly;
+	margin: 40px auto;
+
+	/* margin-right: 60px; */
+}
+.object-button {
+	margin-bottom: 40px;
+}
+#ele,
+#cat,
+#dog,
+#car,
+#banana,
+#butterfly,
+#lizard,
+#lion,
+#bear,
+#fox {
+	height: 70px;
+	width: 250px;
+	border-radius: 20px;
+	font-size: 20px;
 }
 
-#ele{
-  height: 50px;
-  width: 100px;
-  border-radius: 20px;
-  font-size: 20px;
-  
+#car:hover,
+#dog:hover,
+#ele:hover,
+#cat:hover,
+#banana:hover,
+#butterfly:hover,
+#lizard:hover,
+#lion:hover,
+#bear:hover,
+#fox:hover {
+	background-color: green;
 }
-#cat{
-  height: 50px;
-  width: 100px;
-  border-radius: 20px;
-  font-size: 20px;
-}
-#dog{
-  height: 50px;
-  width: 100px;
-  border-radius: 20px;
-  font-size: 20px;
-}
-
-#car{
-  height: 50px;
-  width: 100px;
-  border-radius: 20px;
-  font-size: 20px;
- 
-}
-
-#banana{
-  height: 50px;
-  width: 100px;
-  border-radius: 20px;
-  font-size: 20px;
-}
-#butterfly{
-  height: 50px;
-  width: 100px;
-  border-radius: 20px;
-  font-size: 20px;
-}
-
-#lizard{
-  height: 50px;
-  width: 100px;
-  border-radius: 20px;
-  font-size: 20px;
-}
-
-#lion{
-  height: 50px;
-  width: 100px;
-  border-radius: 20px;
-  font-size: 20px;
-}
-
-#bear{
-  height: 50px;
-  width: 100px;
-  border-radius: 20px;
-  font-size: 20px;
-}
-
-#fox{
-  height: 50px;
-  width: 100px;
-  border-radius: 20px;
-  font-size: 20px;
-}
-
-#car:hover, #dog:hover, #ele:hover, #cat:hover, #banana:hover, #butterfly:hover, #lizard:hover, #lion:hover, #bear:hover, #fox:hover{
-  background-color: green;
-}
-
-
-
-
 
 .container {
-  position:relative;
-  width: 25%;
-  margin-top: 10px;
-
+	position: relative;
+	width: 25%;
+	margin-top: 10px;
 }
 
 .image {
-  display: block;
-  width: 80%;
-  height: auto;
+	display: block;
+	width: 80%;
+	height: auto;
 }
 
 .overlay {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  background-color: #008CBA;
-  overflow: hidden;
-  width: 440px;
-  height: 245px;
-  -webkit-transform: scale(0);
-  -ms-transform: scale(0);
-  transform: scale(0);
-  -webkit-transition: .3s ease;
-  transition: .3s ease;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background-color: #008cba;
+	overflow: hidden;
+	width: 440px;
+	height: 245px;
+	-webkit-transform: scale(0);
+	-ms-transform: scale(0);
+	transform: scale(0);
+	-webkit-transition: 0.3s ease;
+	transition: 0.3s ease;
 }
 
 .container:hover .overlay {
-  -webkit-transform: scale(1);
-  -ms-transform: scale(1);
-  transform: scale(1);
+	-webkit-transform: scale(1);
+	-ms-transform: scale(1);
+	transform: scale(1);
 }
 
 .text {
-  color: white;
-  font-size: 30px;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
-  text-align: center;
+	color: white;
+	font-size: 30px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	-webkit-transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+	text-align: center;
 }
 
-#myImage{
-  width: 440px;
-  height: 350px;
-  border: 10px double white;
+#myImage {
+	width: 440px;
+	height: 350px;
+	border: 10px double white;
 }
 
-#imagedisplay{
-  margin-left: 160px;
- 
+#imagedisplay {
+	/* margin-left: 160px; */
 }
 
-
-#restart{
-  height: 50px;
-  width: 180px;
-  font-size: 20px;
-  margin-top: 5px;
-  margin-left: 300px;
-  font-weight: bold;
-  background-color: rgb(255, 64, 47);
-  border: 3px solid;
-  border-radius: 20%;
+#restart {
+	height: 50px;
+	width: 180px;
+	font-size: 20px;
+	margin-top: 5px;
+	/* margin-left: 300px; */
+	font-weight: bold;
+	background-color: rgb(255, 64, 47);
+	border: 3px solid;
+	border-radius: 20%;
 }
 
-#restart:hover{
-  background-color: aqua;
-  color: red;
+#restart:hover {
+	background-color: aqua;
+	color: red;
 }
 
 /* CSS for the loading indicator */
 .loading {
-  display: none;
-  position: absolute;
-  top: 70%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 80px;
-  height: 80px;
-  border: 5px solid #f3f3f3;
-  border-top: 5px solid #3498db;
-  border-radius: 50%;
-  animation: spin 7s linear infinite;
+	display: none;
+	/* position: absolute;
+	top: 10%;
+	left: 44.5%; */
+	margin: 0 auto;
+	transform: translate(-50%, -50%);
+	width: 80px;
+	height: 80px;
+	border: 5px solid #f3f3f3;
+	border-top: 5px solid #3498db;
+	border-radius: 50%;
+	animation: spin 7s linear infinite;
+}
+.object-button {
+	width: 200px;
+	height: 50px;
 }
 
 @keyframes spin {
-  0% { transform: translate(0%, 0%) rotate(0deg); }
-  100% { transform: translate(0%, 0%) rotate(360deg); }
+	0% {
+		transform: translate(0%, 0%) rotate(0deg);
+	}
+	100% {
+		transform: translate(0%, 0%) rotate(360deg);
+	}
 }

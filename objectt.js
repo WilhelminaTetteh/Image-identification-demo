@@ -13,7 +13,6 @@ let imageToshow = [
 	'images/lion.jpg',
 	'images/car.jpg',
 	'images/bear.jpg',
-	'images/banana.jpg',
 ];
 
 function changeRandomImage() {
@@ -47,8 +46,9 @@ function changeRandomImage() {
 		imgElement.alt = 'Random Image';
 
 		// Resize the image by setting width and height attributes
-		imgElement.width = 450; // Change this value to the desired width
-		imgElement.height = 340; // Change this value to the desired height
+		imgElement.width = 600; // Change this value to the desired width
+		imgElement.height = 340; // 36Change this value to the desired height
+		imgElement.margin = 340; // Change this value to the desired height
 
 		// Clear the previous image(s) and append the new one
 		imageDisplay.innerHTML = '';
@@ -107,8 +107,16 @@ function identifyObject(clickedObject) {
 
 	if (currentImageId === clickedObject) {
 		display.innerText = 'Excellent Work! Keep it Up';
+		// const audio = document.getElementById('audio');
+		// audio.src = './images/great-job.mp3';
+		// audio.play();
+		changeRandomImage();
 	} else {
 		display.innerText = 'Try Again you can do it.';
+		const audio = document.getElementById('audio');
+		audio.src = './images/uh-oh.mp3';
+		audio.play();
+		changeRandomImage();
 	}
 }
 
@@ -121,3 +129,4 @@ restartButton.addEventListener('click', function (event) {
 
 // Initially, hide the loading indicator
 document.getElementById('loading').style.display = 'load';
+console.log(audio);
