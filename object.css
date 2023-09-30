@@ -50,7 +50,7 @@ body {
 }
 #lists {
 	display: flex;
-	flex-wrap: wrap;
+	/* flex-wrap: wrap; */
 	width: 70%;
 	justify-content: space-evenly;
 	margin: 40px auto;
@@ -60,14 +60,17 @@ body {
 .object-button {
 	margin-bottom: 40px;
 }
-#ele,
+#elephant,
 #cat,
 #dog,
 #car,
 #banana,
 #butterfly,
+#baboon,
 #lizard,
 #lion,
+#beetle,
+#squirrel,
 #bear,
 #fox {
 	height: 70px;
@@ -82,9 +85,12 @@ body {
 #cat:hover,
 #banana:hover,
 #butterfly:hover,
+#beetle:hover,
+#squirrel:hover,
 #lizard:hover,
 #lion:hover,
 #bear:hover,
+#baboon:hover,
 #fox:hover {
 	background-color: green;
 }

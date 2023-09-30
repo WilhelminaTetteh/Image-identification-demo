@@ -13,6 +13,9 @@ let imageToshow = [
 	'images/lion.jpg',
 	'images/car.jpg',
 	'images/bear.jpg',
+	'images/beetle.jpg',
+	'images/baboon.jpg',
+	'images/squirrel.jpg',
 ];
 
 function changeRandomImage() {
@@ -71,8 +74,8 @@ document
 	.getElementById('cat')
 	.addEventListener('click', () => identifyObject('cat'));
 document
-	.getElementById('ele')
-	.addEventListener('click', () => identifyObject('ele'));
+	.getElementById('elephant')
+	.addEventListener('click', () => identifyObject('elephant'));
 document
 	.getElementById('dog')
 	.addEventListener('click', () => identifyObject('dog'));
@@ -95,8 +98,14 @@ document
 	.getElementById('bear')
 	.addEventListener('click', () => identifyObject('bear'));
 document
-	.getElementById('banana')
-	.addEventListener('click', () => identifyObject('banana'));
+	.getElementById('baboon')
+	.addEventListener('click', () => identifyObject('baboon'));
+document
+	.getElementById('beetle')
+	.addEventListener('click', () => identifyObject('beetle'));
+document
+	.getElementById('squirrel')
+	.addEventListener('click', () => identifyObject('squirrel'));
 
 // Function to check if the clicked button matches the current image
 function identifyObject(clickedObject) {
@@ -107,9 +116,9 @@ function identifyObject(clickedObject) {
 
 	if (currentImageId === clickedObject) {
 		display.innerText = 'Excellent Work! Keep it Up';
-		// const audio = document.getElementById('audio');
-		// audio.src = './images/great-job.mp3';
-		// audio.play();
+		const audio = document.getElementById('audio');
+		audio.src = './images/great-job.mp3';
+		audio.play();
 		changeRandomImage();
 	} else {
 		display.innerText = 'Try Again you can do it.';
